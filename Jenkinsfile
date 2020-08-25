@@ -6,10 +6,22 @@ pipeline{
           echo 'Build Stage'
           }
       }
-      stage('Test'){
+        
+         stage('Clean'){
+          steps{
+          sh 'mvn clean'
+          }
+      }
+      stage('Build'){
+          steps{
+          sh 'mvn Build'
+          }
+      }
+        stage('Test'){
           steps{
           sh 'mvn test'
           }
       }
+        
     }
 }
