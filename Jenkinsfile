@@ -13,7 +13,7 @@ pipeline{
       }
         stage('Clean'){
           steps{
-          sh 'Clean Stage'
+          echo 'Clean Stage'
           }
       }
         
