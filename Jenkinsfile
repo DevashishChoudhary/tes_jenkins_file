@@ -8,7 +8,7 @@ pipeline{
       }
         stage('Test'){
           steps{
-          sh 'mvn clean'
+          bat 'mvn clean'
           }
       }
         stage('Clean'){
